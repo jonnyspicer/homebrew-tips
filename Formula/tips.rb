@@ -1,8 +1,8 @@
 class Tips < Formula
   desc "CLI tool for generating and displaying helpful programming tips"
   homepage "https://github.com/jonnyspicer/tips"
-  url "https://github.com/jonnyspicer/tips/releases/download/v1.0.0/tips-1.0.0-darwin-universal.tar.gz"
-  sha256 "f99560e16389ea7cfc9fa38c653214c3fe8b14b4f25fb78ba120a1dbe3d22f33"
+  url "https://github.com/jonnyspicer/tips/releases/download/v1.0.1/tips-1.0.1-darwin-universal.tar.gz"
+  sha256 "1b3320b9b564203eb4c67015ed17a3ead8ad20d131651ec7e53f5d7f49c3b431"
   license "MIT"
 
   depends_on "go" => :build
@@ -12,7 +12,7 @@ class Tips < Formula
   end
 
   test do
-    assert_match "1.0.0", shell_output("#{bin}/tips --version")
+    assert_match "1.0.1", shell_output("#{bin}/tips --version")
     assert_match "Tips is a command-line tool", shell_output("#{bin}/tips --help")
 
     # Test basic commands
