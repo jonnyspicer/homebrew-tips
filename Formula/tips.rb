@@ -2,7 +2,7 @@ class Tips < Formula
   desc "CLI tool for generating and displaying helpful programming tips"
   homepage "https://github.com/jonnyspicer/tips"
   url "https://github.com/jonnyspicer/tips/releases/download/v1.0.1/tips-1.0.1-darwin-universal.tar.gz"
-  sha256 "1b3320b9b564203eb4c67015ed17a3ead8ad20d131651ec7e53f5d7f49c3b431"
+  sha256 "aca73d2b4f41d519b0003c4da8232eeb4303df46239af86eb439d6430a427173"
   license "MIT"
 
   depends_on "go" => :build
